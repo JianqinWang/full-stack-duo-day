@@ -14,6 +14,7 @@ def pi_to_n(term):
 
 pi_to_n(100)
 pi_to_n(50)
+pi_to_n(200)
 pi_to_n("a")
 pi_to_n(True)
 pi_to_n(-1)
