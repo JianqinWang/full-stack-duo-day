@@ -1,11 +1,18 @@
 #!/usr/bin/python3
+"""
+Calculate the nth number of pi
+"""
 from decimal import Decimal, getcontext
 
+
 def pi_to_n(term):
+    """
+    Formula to calculate pi
+    """
     if type(term) is not int or term <= 0:
         print("PROF G, YOU CANT DO THAT!")
         return
-    getcontext().prec=term
+    getcontext().prec = term
     print(sum(1/Decimal(16)**k *
               (Decimal(4)/(8*k+1) -
                Decimal(2)/(8*k+4) -
